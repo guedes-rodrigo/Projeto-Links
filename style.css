@@ -49,24 +49,24 @@ height: 100vh;
   padding: 24px;
 }
 
- #profile img{
+ #profile img {
     width: 112px;
     margin: auto;
    }
-   #profile p{
+   #profile p {
     margin-top: 8px;
     font-weight: 500;
     line-height: 24px;
    }
 /* switch  */
-#switch{
+#switch {
   position: relative;
   width: 64px;
   margin: 4px auto;
   
 }
 
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
@@ -78,11 +78,12 @@ height: 100vh;
   transform: translateY(-50%); 
   animation: slide-back 0.4s forwards;
  }
-#switch buttom:hover{
+
+#switch button:hover {
   outline: 8px solid var(--highlight-color)
 }
 
-.light #switch buttom{
+.light #switch button {
   animation: slide-in 0.4s forwards;
 }
 
@@ -152,7 +153,7 @@ height: 100vh;
     font-size: 14px;
   }
 
-  /* Media Queries*/
+  /* Media Queries */
 
   @media(min-width:700px) {
     :root{
@@ -162,19 +163,22 @@ height: 100vh;
       --bg-url:url(./assets/bg-desktop-light.jpg); 
     }
   }
+
 /* Animations */
-@keyframes slide-in{
-  from {left:0;
+@keyframes slide-in {
+  from {
+    left:0;
   }
-  to{ 
+  to { 
     left:50%;
   }
 }
 
-@keyframes slide-back{
-  from {left:50%;
+@keyframes slide-back {
+  from {
+    left:50%;
   }
-  to{ 
+  to { 
     left:0;
   }
 }
